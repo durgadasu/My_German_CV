@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper,sans]{moderncv} % Reduced font size to fit content1
+
+% ModernCV themes
+\moderncvstyle{classic}        % Style options: banking, casual, classic, oldstyle, fancy
+\moderncvcolor{blue}          % Color options: blue, orange, green, red, purple, grey, black
+\renewcommand{\familydefault}{\sfdefault} % Use sans-serif font
+\nopagenumbers{}              % Suppress page numbers
+
+% Adjust the page margins
+\usepackage[scale=0.8]{geometry} % Adjusted scale for better content fit
+\usepackage{graphicx}           % Add graphicx package for including images
+\usepackage{datetime}
+\usepackage[document]{ragged2e}
+\usepackage[ngerman]{babel}  %<========== Language German, new orthography
+
+\newdateformat{monthyeardate}{%
+	\monthname[\THEMONTH] - \THEYEAR}
+
+% Personal data
+\name{Sai Durga}{Dasu}
+\title{\normalfont{\textbf{\small{\color{black}Junior Projektmanager | Agile-Spezialist}}}}
+\address{Hannover, Deutschland}{}{}             % Optional
+\phone[mobile]{+49~176~42039277}                % Optional
+\email{saidurga606@gmail.com}                   % Optional
+\social[linkedin]{saidasu}                      % Optional
+\photo[100pt]{042.jpg}                 % Adjusted photo size
+
+%----------------------------------------------------------------------------------
+% Content
+%----------------------------------------------------------------------------------
+\quote{{\begin{justify}Ergebnisorientierter Junior Projektmanagerin mit Erfahrung in agilen Methoden (Scrum, Kanban) und datengetriebener Entscheidungsfindung. Kompetent in der Umsetzung von Projekten, Zusammenarbeit mit Stakeholdern und Optimierung von Prozessen durch Automatisierung. Stark in der Analyse, Berichterstattung und im Stakeholder-Management.\end{justify} }}
+
+
+\let\originalrecomputecvlengths\recomputecvlengths
+\renewcommand*{\recomputecvlengths}{%
+	\originalrecomputecvlengths% 
+	\setlength{\quotewidth}{0.95\textwidth}}
+
+\begin{document}
+	\setlength{\quotewidth}{2.85\textwidth}
+	\makecvtitle
+	% Professional Summary
+	%\section*{Berufliches Profil}
+	%Ergebnisorientierter Junior Projektmanager mit Erfahrung in agilen Methoden (Scrum, Kanban) und datengetriebener Entscheidungsfindung. Kompetent in der Umsetzung von Projekten, Zusammenarbeit mit Stakeholdern und Optimierung von Prozessen durch Automatisierung. Stark in der Analyse, Berichterstattung und im Stakeholder-Management.
+
+	% Key Skills
+	\section*{Kernkompetenzen}
+	\cvitem{Agile Methoden}{Scrum, Kanban, PRINCE2}
+	\cvitem{Management Tools}{Jira, Asana, Confluence}
+	\cvitem{Datenanalyse}{Amazon Quicksight, Python, SQL}
+	\cvitem{Kommunikation}{Stakeholder-Management, bereichsübergreifende Zusammenarbeit}
+	\cvitem{Sprachen}{Deutsch (B1), Englisch (verhandlungssicher), Hindi (fließend), Telugu (Muttersprache)}
+	
+	\section{Weiterbildung}
+	\cventry{07/2024-Gegenwart}{Projektmanagement, Professional Scrum Master und Product Owner}{\newline{Learning Digital GmbH}}{Deutschland}{} {}
+	\cvitem{} {
+		\begin{itemize}
+			\item{{\textbf{PRINCE2 Foundation and Practitioner 7th Edition} - Detailliertes Verständnis der PRINCE2-Methodik, einschließlich Prinzipien, Themen(z. B. Qualitäts, Risiko und Issuemanagement) und Prozessstrukturen von der Projektinitiierung bis zum Abschluss.}} 
+			\item{{\textbf{Professional Scrum Master} - Umfassendes Wissen über Scrum-Prinzipien, Praktiken und die Rolle des Scrum Masters, mit Fokus auf die Unterstützung agiler Teams und die Förderung von Zusammenarbeit.}}							
+			\item{{\textbf{Professional Scrum Product Owner} - Tiefes Verständnis der Scrum-Prinzipien und der Rolle des Product Owners, insbesondere bei der Produktvision und der wertorientierten Produktentwicklung.}}
+		\end{itemize}
+	}	
+
+	% Work Experience
+	\section*{Berufserfahrung}
+	\cventry{06/2022 -- 12/2023}{Programmmanagerin -- Alexa Preview}{Amazon}{München, Deutschland}{}{
+		\begin{itemize}
+			\item Steigerung der Beta-Teilnehmerbeteiligung um 20\% durch strategische Rekrutierungspläne.
+			\item Erfolgsquote von 95\% bei Teilnehmern durch effektive Engagement-Initiativen und First-Level-Support.
+			\item Automatisierung der HR-Datenerfassung mit Python-Skripten, wodurch die Effizienz des Auswahlprozesses erhöht wurde.
+			\item Zusammenarbeit mit Produktmanagern und Ingenieurteams zur Priorisierung und Lösung von Beta-Programmproblemen.
+			\item Erstellung von Berichten mit Amazon Quicksight zur Identifikation von Risiken und zur Statusüberwachung.
+	\end{itemize}}
+	
+	\cventry{07/2019 -- 01/2020}{Systemingenieur-Praktikant -- Industrie 4.0}{Texas Instruments}{München, Deutschland}{}{
+		\begin{itemize}
+			\item Entwicklung und Durchführung von Softwaretests für Ethernet-Kommunikation mit PRU und Python.
+			\item Optimierung der Anforderungsprozesse mit Tools wie Confluence und Git zur Verbesserung der Teamzusammenarbeit.
+	\end{itemize}}
+	
+	\cventry{08/2018 -- 03/2019}{Programmmanager-Praktikant -- Strategische Partnerschaften}{Cadence Design Systems}{München, Deutschland}{}{
+		\begin{itemize}
+			\item Förderung der Nutzung von Cadence-Tools durch Zusammenarbeit mit externen Kunden, Universitätsprofessoren und akademischen Forschern in der EMEA-Region.
+			\item Koordination und Analyse von Projekten mit wichtigen akademischen Partnern zur Verbesserung von Produkten und Programmen.			
+			\item Zusammenarbeit mit akademischen Partnern zur Förderung der Nutzung von Cadence-Tools (+25\%).
+			\item Verbesserung des LinkedIn-Engagements um 20\% durch gezielte Content-Strategien.
+	\end{itemize}}
+
+	% Education
+	\section*{Ausbildung}
+	\cventry{10/2016 -- 09/2021}{Master of Engineering -- Informationstechnologie}{Frankfurt University of Applied Sciences}{Frankfurt, Deutschland}{}{Schwerpunkt: Computational Intelligence, Software Engineering, Projektmanagement}
+	\cventry{09/2009 -- 06/2013}{Bachelor of Science and Technology -- Elektronik und Kommunikationstechnik}{Jawaharlal Nehru Technological University}{Hyderabad, Indien}{}{}
+	
+	% Certifications
+	\section*{Zertifikate}
+	\cvitem{}{PRINCE2 Foundation \& Practitioner, 7th Edition}
+	\cvitem{}{Professional Scrum Master \& Product Owner}
+	\cvitem{}{Agile mit Atlassian Jira}
+	\cvitem{}{Grundlagen der Big-Data-Analyse mit SQL}
+	
+	% Technical Skills
+	\section*{Technische Fähigkeiten}
+	\cvitem{Programmier-\\sprachen}{Python, SQL, PRU Programming}
+	\cvitem{Cloud}{Amazon Web Services (AWS)}
+	\cvitem{Tools}{Jira, Confluence, Asana, Bitbucket, Qualtrics, Amazon Quicksight}
+	\cvitem{Sonstiges}{Google Sheets, Wireshark, LaTeX}
+	
+	% Interests
+	%\section*{Interessen}
+	%\cvitem{}{Prozessoptimierung und Automatisierung}
+	%\cvitem{}{Ehrenamtliche Arbeit im Bildungsbereich}
+	
+\cvitem{}{\begin{flushright} {Hannover, \monthyeardate\today} \end{flushright}}	
+	
+\end{document}
